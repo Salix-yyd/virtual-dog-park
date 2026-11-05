@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Virtual Dog Park</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Trebuchet MS", sans-serif;
+		}
+
+		.site-header {
+			background: #111;
+			color: #fff;
+		}
+
+		.navigation {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px;
+			max-width: 1200px;
+			min-height: 68px;
+			margin: 0 auto;
+			padding: 12px 24px;
+		}
+
+		.brand,
+		.navigation a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.brand {
+			font-size: 1.2rem;
+			font-weight: 700;
+			white-space: nowrap;
+		}
+
+		.navigation-links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 28px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.navigation-links a {
+			font-size: 0.95rem;
+		}
+
+		.navigation-links a:hover,
+		.navigation-links a:focus-visible {
+			color: #b7e4c7;
+		}
+
+		@media (max-width: 520px) {
+			.navigation {
+				align-items: flex-start;
+				flex-direction: column;
+				gap: 12px;
+			}
+
+			.navigation-links {
+				gap: 12px 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header" id="home">
+		<nav class="navigation" aria-label="Main navigation">
+			<a class="brand" href="#home">Virtual Dog Park</a>
+			<ul class="navigation-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#dogs">Dog Encyclopedia</a></li>
+				<li><a href="#park">Virtual Park</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main></main>
+</body>
+</html>
