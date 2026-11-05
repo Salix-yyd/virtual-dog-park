@@ -310,6 +310,181 @@ a {
 	line-height: 1.45;
 }
 
+.virtual-dog {
+	position: relative;
+	padding-block: 62px 72px;
+	border-top: 1px solid var(--line);
+	background: var(--white);
+}
+
+.pet-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+	align-items: start;
+	gap: 24px;
+}
+
+.adoption-form,
+.dog-dashboard {
+	min-width: 0;
+	padding: 24px;
+	border: 1px solid var(--line);
+	border-radius: 8px;
+	background: var(--white);
+	box-shadow: 0 5px 16px rgba(32, 40, 32, 0.06);
+}
+
+.dog-dashboard[hidden] {
+	display: none;
+}
+
+.form-fields {
+	display: grid;
+	gap: 16px;
+}
+
+.form-field label {
+	display: block;
+	margin-bottom: 7px;
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.form-field input,
+.form-field select {
+	width: 100%;
+	min-height: 44px;
+	padding: 9px 11px;
+	border: 1px solid #aebdae;
+	border-radius: 5px;
+	background: var(--white);
+	color: var(--ink);
+	font: inherit;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible {
+	border-color: var(--leaf);
+	outline: 3px solid rgba(40, 93, 67, 0.2);
+	outline-offset: 1px;
+}
+
+.field-help {
+	margin: 6px 0 0;
+	color: var(--muted);
+	font-size: 0.8rem;
+	line-height: 1.45;
+}
+
+.form-message {
+	min-height: 1.3em;
+	margin: 0;
+	color: #9c342b;
+	font-size: 0.88rem;
+}
+
+.action-button {
+	min-height: 42px;
+	padding: 9px 17px;
+	border: 1px solid var(--leaf);
+	border-radius: 5px;
+	background: var(--leaf);
+	color: var(--white);
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.action-button:hover,
+.action-button:focus-visible {
+	background: #1d4934;
+}
+
+.action-button:focus-visible {
+	outline: 3px solid rgba(40, 93, 67, 0.25);
+	outline-offset: 2px;
+}
+
+.adopt-button {
+	justify-self: start;
+}
+
+.dog-dashboard h3 {
+	margin: 0 0 18px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+}
+
+.dog-stats {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+	margin: 0;
+}
+
+.dog-stats div {
+	min-width: 0;
+	padding: 12px;
+	border-radius: 5px;
+	background: var(--paper);
+}
+
+.dog-stats dt {
+	margin-bottom: 4px;
+	color: var(--muted);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.dog-stats dd {
+	margin: 0;
+	font-weight: 700;
+	line-height: 1.4;
+	 overflow-wrap: anywhere;
+}
+
+.happiness-meter {
+	height: 10px;
+	margin-top: 16px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e4ebe3;
+}
+
+.happiness-fill {
+	width: 50%;
+	height: 100%;
+	border-radius: inherit;
+	background: #54905e;
+	transition: width 180ms ease-out;
+}
+
+.care-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 18px;
+}
+
+.play-button {
+	border-color: #9c5a31;
+	background: #9c5a31;
+}
+
+.play-button:hover,
+.play-button:focus-visible {
+	background: #7d4526;
+}
+
+.interaction-message {
+	min-height: 1.4em;
+	margin: 12px 0 0;
+	color: var(--muted);
+	font-size: 0.88rem;
+}
+
 .site-footer {
 	position: relative;
 	background: #202820;
@@ -336,6 +511,10 @@ a {
 @media (max-width: 820px) {
 	.breed-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.pet-layout {
+		grid-template-columns: 1fr;
 	}
 
 	.section-heading {
@@ -381,6 +560,15 @@ a {
 
 	.encyclopedia {
 		padding-block: 30px 52px;
+	}
+
+	.virtual-dog {
+		padding-block: 44px 52px;
+	}
+
+	.adoption-form,
+	.dog-dashboard {
+		padding: 18px;
 	}
 
 	.section-heading h2 {

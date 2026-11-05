@@ -15,6 +15,7 @@
 			<ul class="navigation-links">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#dogs">Dog Encyclopedia</a></li>
+				<li><a href="#my-dog">My Virtual Dog</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -117,6 +118,60 @@
 							</dl>
 						</div>
 					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="virtual-dog" id="my-dog" aria-labelledby="my-dog-title">
+			<div class="page-container">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">A little friend of your own</p>
+						<h2 id="my-dog-title">My Virtual Dog</h2>
+					</div>
+					<p class="section-intro">Choose a breed, give your dog a name, and keep it happy with a little care.</p>
+				</div>
+
+				<div class="pet-layout">
+					<form class="adoption-form" id="adoption-form" novalidate>
+						<div class="form-fields">
+							<div class="form-field">
+								<label for="dog-name">Dog's name</label>
+								<input id="dog-name" name="dogName" type="text" maxlength="20" autocomplete="off" required aria-describedby="dog-name-help">
+								<p class="field-help" id="dog-name-help">Use 1 to 20 characters. Spaces within the name are okay.</p>
+							</div>
+							<div class="form-field">
+								<label for="dog-breed">Choose a breed</label>
+								<select id="dog-breed" name="breed" required>
+									<option value="">Select a breed</option>
+									<option value="Beagle">Beagle</option>
+									<option value="Golden Retriever">Golden Retriever</option>
+									<option value="Poodle">Poodle</option>
+								</select>
+							</div>
+							<p class="form-message" id="adoption-message" role="alert" aria-live="assertive"></p>
+							<button class="action-button adopt-button" type="submit">Adopt</button>
+						</div>
+					</form>
+
+					<section class="dog-dashboard" id="dog-dashboard" aria-labelledby="dog-name-display" hidden>
+						<p class="eyebrow">Your new friend</p>
+						<h3 id="dog-name-display"></h3>
+						<dl class="dog-stats">
+							<div><dt>Breed</dt><dd id="dog-breed-display"></dd></div>
+							<div><dt>Day</dt><dd id="dog-day">1</dd></div>
+							<div><dt>Growth stage</dt><dd id="dog-stage">Puppy</dd></div>
+							<div><dt>Happiness</dt><dd><span id="dog-happiness">50</span>%</dd></div>
+						</dl>
+						<div class="happiness-meter" role="meter" aria-label="Happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+							<div class="happiness-fill" id="happiness-fill"></div>
+						</div>
+						<div class="care-actions" aria-label="Care for your dog">
+							<button class="action-button" id="feed-button" type="button">Feed</button>
+							<button class="action-button play-button" id="play-button" type="button">Play</button>
+						</div>
+						<p class="interaction-message" id="interaction-message" aria-live="polite">Feed or play to make your dog happier.</p>
+					</section>
 				</div>
 			</div>
 		</section>
