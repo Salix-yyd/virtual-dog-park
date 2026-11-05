@@ -163,14 +163,26 @@
 							<div><dt>Growth stage</dt><dd id="dog-stage">Puppy</dd></div>
 							<div><dt>Happiness</dt><dd><span id="dog-happiness">50</span>%</dd></div>
 						</dl>
+						<div class="growth-progress">
+							<div class="growth-progress-heading">
+								<span>Growth progress</span>
+								<span id="growth-caption">Day 1 of 4</span>
+							</div>
+							<div class="growth-meter" role="progressbar" aria-label="Growth progress" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1">
+								<div class="growth-fill" id="growth-fill"></div>
+							</div>
+						</div>
 						<div class="happiness-meter" role="meter" aria-label="Happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
 							<div class="happiness-fill" id="happiness-fill"></div>
 						</div>
 						<div class="care-actions" aria-label="Care for your dog">
 							<button class="action-button" id="feed-button" type="button">Feed</button>
 							<button class="action-button play-button" id="play-button" type="button">Play</button>
+							<button class="action-button next-day-button" id="next-day-button" type="button">Next Day</button>
 						</div>
 						<p class="interaction-message" id="interaction-message" aria-live="polite">Feed or play to make your dog happier.</p>
+						<p class="storage-note">Your progress is saved in this browser on this device.</p>
+						<button class="start-over-button" id="start-over-button" type="button">Start Over</button>
 					</section>
 				</div>
 			</div>

@@ -338,6 +338,10 @@ a {
 	display: none;
 }
 
+.adoption-form[hidden] {
+	display: none;
+}
+
 .form-fields {
 	display: grid;
 	gap: 16px;
@@ -461,6 +465,35 @@ a {
 	transition: width 180ms ease-out;
 }
 
+.growth-progress {
+	margin-top: 18px;
+}
+
+.growth-progress-heading {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 7px;
+	color: var(--muted);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.growth-meter {
+	height: 10px;
+	overflow: hidden;
+	border-radius: 999px;
+	background: #e4ebe3;
+}
+
+.growth-fill {
+	width: 25%;
+	height: 100%;
+	border-radius: inherit;
+	background: #b9773d;
+	transition: width 180ms ease-out;
+}
+
 .care-actions {
 	display: flex;
 	flex-wrap: wrap;
@@ -478,11 +511,46 @@ a {
 	background: #7d4526;
 }
 
+.next-day-button {
+	border-color: #3e6269;
+	background: #3e6269;
+}
+
+.next-day-button:hover,
+.next-day-button:focus-visible {
+	background: #2f4d53;
+}
+
 .interaction-message {
 	min-height: 1.4em;
 	margin: 12px 0 0;
 	color: var(--muted);
 	font-size: 0.88rem;
+}
+
+.storage-note {
+	margin: 6px 0 0;
+	color: var(--muted);
+	font-size: 0.78rem;
+}
+
+.start-over-button {
+	margin-top: 18px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: #8d3932;
+	font: inherit;
+	font-size: 0.88rem;
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	cursor: pointer;
+}
+
+.start-over-button:hover,
+.start-over-button:focus-visible {
+	color: #682823;
 }
 
 .site-footer {
