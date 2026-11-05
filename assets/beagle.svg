@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" role="img" aria-labelledby="title">
+	<title id="title">Beagle</title>
+	<ellipse cx="132" cy="202" rx="63" ry="8" fill="#7d6754" opacity=".16"/>
+	<path d="M172 151c17-1 25-11 24-23-1-8-7-13-13-15" fill="none" stroke="#68432f" stroke-width="9" stroke-linecap="round"/>
+	<path d="M84 128c5-22 26-35 52-35 28 0 51 18 54 46l3 47H73l4-34c1-10 3-18 7-24Z" fill="#b9783f" stroke="#4b3529" stroke-width="3"/>
+	<path d="M89 119c10-20 27-27 47-26 19 1 36 11 43 29-19 10-35 9-51 1-13 12-26 16-43 11 0-5 2-10 4-15Z" fill="#493329"/>
+	<path d="M105 137c9-11 21-16 32-16 15 0 27 8 34 22l7 42H86l5-30c2-7 7-13 14-18Z" fill="#f4ead9"/>
+	<path d="M81 173h38v20c0 6-4 9-10 9H83c-6 0-9-4-8-10l6-19Zm59 0h37l7 18c2 6-2 11-8 11h-27c-6 0-9-3-9-9v-20Z" fill="#f4ead9" stroke="#4b3529" stroke-width="3"/>
+	<path d="M87 72c-2-26 15-44 42-44s46 18 44 45l-4 37c-2 22-18 39-40 39-23 0-39-17-41-39l-1-38Z" fill="#c9874b" stroke="#4b3529" stroke-width="3"/>
+	<ellipse cx="81" cy="94" rx="17" ry="39" transform="rotate(-10 81 94)" fill="#52352c"/>
+	<ellipse cx="179" cy="94" rx="17" ry="39" transform="rotate(10 179 94)" fill="#52352c"/>
+	<path d="M121 35c-4 16-4 30 0 45 3 12 4 22 0 32-2 6-7 11-13 14 5 12 14 18 26 18 13 0 22-7 27-19-7-3-12-9-14-17-3-10-1-20 2-31 4-15 3-29-2-42-7-5-17-7-26 0Z" fill="#f7eddf"/>
+	<ellipse cx="110" cy="88" rx="5" ry="6" fill="#302720"/>
+	<ellipse cx="151" cy="88" rx="5" ry="6" fill="#302720"/>
+	<ellipse cx="131" cy="113" rx="12" ry="8" fill="#302720"/>
+	<path d="M131 121c-1 7-7 10-14 8m14-8c1 7 7 10 14 8" fill="none" stroke="#68463a" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

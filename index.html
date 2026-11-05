@@ -3,106 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Virtual Dog Park</title>
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
-			margin: 0;
-			font-family: "Trebuchet MS", sans-serif;
-		}
-
-		.site-header {
-			background: #111;
-			color: #fff;
-		}
-
-		main {
-			flex: 1;
-			position: relative;
-			overflow: hidden;
-			background-color: #f2f6ef;
-		}
-
-		.paw-pattern {
-			position: absolute;
-			inset: 0;
-			width: 100%;
-			height: 100%;
-			pointer-events: none;
-		}
-
-		.navigation {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			gap: 24px;
-			max-width: 1200px;
-			min-height: 68px;
-			margin: 0 auto;
-			padding: 12px 24px;
-		}
-
-		.brand,
-		.navigation a {
-			color: inherit;
-			text-decoration: none;
-		}
-
-		.brand {
-			font-size: 1.2rem;
-			font-weight: 700;
-			white-space: nowrap;
-		}
-
-		.navigation-links {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 28px;
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-
-		.navigation-links a {
-			font-size: 0.95rem;
-		}
-
-		.navigation-links a:hover,
-		.navigation-links a:focus-visible {
-			color: #b7e4c7;
-		}
-
-		@media (max-width: 520px) {
-			.navigation {
-				align-items: flex-start;
-				flex-direction: column;
-				gap: 12px;
-			}
-
-			.navigation-links {
-				gap: 12px 20px;
-			}
-		}
-	</style>
+	<meta name="description" content="Meet three popular dog breeds and learn the basics of caring for them.">
+	<title>Virtual Dog Park | Meet the Breeds</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<header class="site-header" id="home">
-		<nav class="navigation" aria-label="Main navigation">
+		<nav class="navigation page-container" aria-label="Main navigation">
 			<a class="brand" href="#home">Virtual Dog Park</a>
 			<ul class="navigation-links">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#dogs">Dog Encyclopedia</a></li>
-				<li><a href="#park">Virtual Park</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
+
+	<main class="site-main">
 		<svg class="paw-pattern" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 			<defs>
 				<pattern id="pawprints" width="220" height="180" patternUnits="userSpaceOnUse">
@@ -121,11 +38,95 @@
 							<ellipse cx="22" cy="-18" rx="6" ry="9" />
 							<circle cx="3" cy="9" r="17" />
 						</g>
-				</g>
-			</pattern>
-		</defs>
-		<rect width="100%" height="100%" fill="url(#pawprints)" />
+					</g>
+				</pattern>
+			</defs>
+			<rect width="100%" height="100%" fill="url(#pawprints)" />
 		</svg>
+
+		<section class="welcome" aria-labelledby="welcome-title">
+			<div class="page-container welcome-content">
+				<p class="eyebrow">A friendly place to start</p>
+				<h1 id="welcome-title">Meet your next best friend.</h1>
+				<p class="welcome-copy">Get to know three much-loved dog breeds and the everyday care that helps them thrive.</p>
+				<a class="text-link" href="#dogs">Explore the breeds <span aria-hidden="true">&darr;</span></a>
+			</div>
+		</section>
+
+		<section class="encyclopedia" id="dogs" aria-labelledby="encyclopedia-title">
+			<div class="page-container">
+				<div class="section-heading">
+					<div>
+						<p class="eyebrow">The dog encyclopedia</p>
+						<h2 id="encyclopedia-title">Three good dogs to know</h2>
+					</div>
+					<p class="section-intro">Every dog is an individual. These quick notes are a helpful first look.</p>
+				</div>
+
+				<div class="search-row">
+					<label for="breed-search">Find a breed</label>
+					<input id="breed-search" type="search" placeholder="Try “Beagle”" autocomplete="off">
+				</div>
+				<p class="search-status" id="search-status" aria-live="polite">Showing all 3 breeds.</p>
+
+				<div class="breed-grid" id="breed-list">
+					<article class="breed-card" data-breed-card>
+						<div class="breed-art beagle-art">
+							<img src="assets/beagle.svg" alt="Illustration of a Beagle." width="260" height="220">
+							<span class="breed-number" aria-hidden="true">01</span>
+						</div>
+						<div class="breed-content">
+							<p class="breed-kind">The scent detective</p>
+							<h3>Beagle</h3>
+							<dl class="breed-facts">
+								<div><dt>Size</dt><dd>Small to medium</dd></div>
+								<div><dt>Personality</dt><dd>Curious, merry, and sociable</dd></div>
+								<div><dt>Care</dt><dd>Enjoys daily walks and sniffing games. Use a leash outdoors; Beagles love following scents.</dd></div>
+							</dl>
+						</div>
+					</article>
+
+					<article class="breed-card" data-breed-card>
+						<div class="breed-art golden-art">
+							<img src="assets/golden-retriever.svg" alt="Illustration of a Golden Retriever." width="260" height="220">
+							<span class="breed-number" aria-hidden="true">02</span>
+						</div>
+						<div class="breed-content">
+							<p class="breed-kind">The sunny companion</p>
+							<h3>Golden Retriever</h3>
+							<dl class="breed-facts">
+								<div><dt>Size</dt><dd>Large</dd></div>
+								<div><dt>Personality</dt><dd>Friendly, patient, and eager to learn</dd></div>
+								<div><dt>Care</dt><dd>Needs daily exercise and regular brushing to keep its coat comfortable.</dd></div>
+							</dl>
+						</div>
+					</article>
+
+					<article class="breed-card" data-breed-card>
+						<div class="breed-art poodle-art">
+							<img src="assets/poodle.svg" alt="Illustration of a Poodle." width="260" height="220">
+							<span class="breed-number" aria-hidden="true">03</span>
+						</div>
+						<div class="breed-content">
+							<p class="breed-kind">The clever learner</p>
+							<h3>Poodle</h3>
+							<dl class="breed-facts">
+								<div><dt>Size</dt><dd>Small to large, depending on type</dd></div>
+								<div><dt>Personality</dt><dd>Bright, active, and people-focused</dd></div>
+								<div><dt>Care</dt><dd>Needs regular brushing, coat trims, and fun activities for its quick mind.</dd></div>
+							</dl>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<footer class="site-footer">
+		<div class="page-container footer-content">
+			<p>Virtual Dog Park</p>
+			<p>A small guide to getting to know dogs.</p>
+		</div>
+	</footer>
 </body>
 </html>

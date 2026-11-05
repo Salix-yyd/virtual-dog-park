@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" role="img" aria-labelledby="title">
+	<title id="title">Poodle</title>
+	<ellipse cx="132" cy="202" rx="58" ry="8" fill="#61564d" opacity=".16"/>
+	<path d="M174 123c17-4 24-15 20-26-3-8-9-11-17-10" fill="none" stroke="#765747" stroke-width="7" stroke-linecap="round"/>
+	<circle cx="194" cy="83" r="13" fill="#a68772" stroke="#51443c" stroke-width="3"/>
+	<path d="M97 126c8-13 20-20 35-20 17 0 30 8 37 22l8 37c2 9-4 17-13 17h-65c-9 0-15-8-13-17l11-39Z" fill="#9c7d68" stroke="#51443c" stroke-width="3"/>
+	<path d="M106 157c7-10 16-14 26-14 11 0 20 5 25 15l4 15h-60l5-16Z" fill="#f0e2d5"/>
+	<path d="M105 170h20v25c0 5-4 8-9 8h-8c-6 0-9-4-8-10l5-23Zm31 0h20l5 23c1 6-2 10-8 10h-8c-5 0-9-3-9-8v-25Z" fill="#b89c87" stroke="#51443c" stroke-width="3"/>
+	<path d="M105 74c0-20 13-34 27-34s27 14 27 34v35c0 25-12 43-27 43s-27-18-27-43V74Z" fill="#9c7d68" stroke="#51443c" stroke-width="3"/>
+	<ellipse cx="102" cy="92" rx="13" ry="27" transform="rotate(-12 102 92)" fill="#806451"/>
+	<ellipse cx="162" cy="92" rx="13" ry="27" transform="rotate(12 162 92)" fill="#806451"/>
+	<circle cx="131" cy="39" r="19" fill="#b2947e" stroke="#51443c" stroke-width="3"/>
+	<circle cx="108" cy="51" r="14" fill="#a68772"/>
+	<circle cx="153" cy="51" r="14" fill="#a68772"/>
+	<path d="M112 92c7-8 14-12 20-12s14 4 20 12c-1 23-8 38-20 38s-19-15-20-38Z" fill="#f0e2d5"/>
+	<ellipse cx="119" cy="83" rx="4.5" ry="5.5" fill="#2e2824"/>
+	<ellipse cx="143" cy="83" rx="4.5" ry="5.5" fill="#2e2824"/>
+	<ellipse cx="131" cy="101" rx="9" ry="6.5" fill="#2e2824"/>
+	<path d="M131 108c0 5-4 7-9 7m9-7c0 5 4 7 9 7" fill="none" stroke="#695348" stroke-width="2" stroke-linecap="round"/>
+</svg>
